@@ -5,10 +5,11 @@ public class RunnableThreadExample implements Runnable{
     @Override
     public void run() {
 
-        System.out.println("runnable thread is running:");
+        System.out.println("runnable thread is running: "+ Thread.currentThread());
         try{
             while(count <5){
                 Thread.sleep(500);
+
                 count++;
             }
 
